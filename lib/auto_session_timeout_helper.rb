@@ -23,4 +23,6 @@ JS
   end
 end
 
-ActionView::Base.send :include, AutoSessionTimeoutHelper
+ActiveSupport.on_load(:action_view) do
+  ActionView::Base.include AutoSessionTimeoutHelper
+end

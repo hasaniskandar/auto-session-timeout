@@ -1,3 +1,5 @@
+require 'action_view/helpers/javascript_helper'
+require 'action_view/helpers/tag_helper'
 require File.dirname(__FILE__) + '/test_helper'
 
 describe AutoSessionTimeoutHelper do
